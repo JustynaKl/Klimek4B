@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model DOM część 2</title>
+    <style>
+h1{
+    background-color: black;
+    color: chocolate;
+}
+p{
+    color: burlywood;
+}
+    </style>
+</head>
+<body>
+    <h1>Model DOM 2</h1>
+    <div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam odit ex eos deleniti, ipsum consequatur et aliquid minus quos officiis.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione nobis ad id ipsam cupiditate. Maxime.</p>
+    </div>
+
+    <script>
+        const akapity = document.querySelectorAll('p');
+
+        const naglowek = document.querySelector('h1');
+        naglowek.innerHTML = ('JavaScript')
+        
+        const Div = document.querySelector('div');
+        Div.style.fontFamily = 'Tahoma'
+
+        const naglowekDrugiegos = document.createElement('h2');
+        document.body.appendChild(naglowekDrugiegos)
+        naglowekDrugiegos.textContent = ('Aplikacje internetowe');
+
+        naglowek.remove();
+
+    </script>
+</body>
+</html>
