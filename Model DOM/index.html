@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .zmiana{
+            background-color: black;
+            color: beige;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Przykład z modelu DOM</h1>
+    <div class="sekcja">
+        <h2 id="tytul">Tytuł akapitu</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repudiandae temporibus numquam accusantium corporis quidem provident dolorum velit!</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <img src="sunset-glow-g089c4dc94_640.jpg" alt="Zachód słońca">
+    </div>
+
+    <script>
+        const naglowekGlowny = document.querySelector('h1'); 
+        //pobieramy (odwołujemy się) h1 ze strony
+        const SekcjaDiv = document.querySelector('.sekcja');
+        //pobieramy diva o klasie sekcja
+        const tytulH2 = document.querySelector('#tytul');
+        //const tytulH2 = document.getElementById('tytul');
+
+        const akapity = document.querySelectorAll('p');
+        //pobieramy wszystkie akapity ze strony
+
+        //zmieńmy zawartość nagłówka h1
+            //akapity[0].innerHTML='<b>Nowa treść akapitu</b>';
+            //akapity[0].textContent='<b>Nowa treść akapitu</b>';
+        
+        akapity[0].textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
+
+        //zamieniamy obrazek na inny
+        const obrazek = document.querySelector('img');
+        //podmieniamy zawartość atrybuty src
+        obrazek.setAttribute('src','mountains-g3c53c53b6_640.jpg');
+
+        //zmieniamy style css h1
+        naglowekGlowny.style.color = 'red'
+        naglowekGlowny.style.fontFamily = 'Arial'
+
+        //dodajemy klasę zmiana do akapitu
+        // akapity[0].classList.add('zmiana');
+        // akapity[1].classList.add('zmiana');
+
+        akapity.forEach(akapit =>{
+            akapit.classList.add('zmiana');
+        });
+
+        //usuwamy obrazek ze strony
+        obrazek.remove();
+
+        //tworzymy nowe element HTML i wstawiamy do strony
+        const nowyObrazek = document.createElement('img')
+
+        nowyObrazek.src = 'sunset-glow-g089c4dc94_640.jpg';
+        document.body.appendChild(nowyObrazek);
+
+        </script>
+</body>
+</html>
