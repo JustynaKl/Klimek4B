@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        img{
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .banner{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            position: relative;
+        }
+
+        .banner::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background-color: gainsboro;
+        }
+
+        .item{
+            width: 300px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .wrapper{
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .number{
+            font-size: 2rem;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        .link{
+            display: block;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .text{
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="banner">
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2022/05/05/01/05/nature-7175030_960_720.jpg">
+            <div class="wrapper">
+                <p class="number">01</p>
+                <div class="container">
+                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem consequatur quas quam!</p>
+                    <a class= "link" href="http://">learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg">
+            <div class="wrapper">
+                <p class="number">02</p>
+            <div class="container">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, incidunt nesciunt quaerat doloribus quia totam aut quisquam tenetur quasi provident.</p>
+                <a class="link" href="">learn more</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_960_720.jpg">
+            <div class="wrapper">
+                <p class="number">03</p>
+                <div class="container">
+                    <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non vitae vero recusandae quo aliquam voluptas corporis accusamus nisi, ea necessitatibus itaque eligendi molestiae eaque iusto!</p>
+                    <a class="link" href="">learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
