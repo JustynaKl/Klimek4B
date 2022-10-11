@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZdarzenieJS</title>
+    <style>
+        .red{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+        .green{
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+        button{
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <button>Kliknij mnie ;)</button>
+
+    <script>
+        const div1 = document.querySelector('.red')
+        const div2 = document.querySelector('.green')
+        const btn = document.querySelector('button')
+
+        //po kliknieciu na czerwony div zmieni się jego kolor
+        div1.addEventListener('click', function(){
+            div1.style.backgroundColor = "yellow";
+        })
+        //po kliknięciu kursorem myszy przycisk zmieni położenie
+        btn.addEventListener('mouseover', ()=>{
+            btn.style.transform = 'translateX(200px)'
+        })
+
+        //po kliknięciu w przycisk znika nam div zielony
+        btn.addEventListener('click', ()=>{
+            div2.remove();
+        })
+    </script>
+</body>
+</html>

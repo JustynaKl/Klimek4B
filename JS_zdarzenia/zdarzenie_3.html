@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .akapit{
+        padding: 20px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <p class="akapit">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta minus quae magni?</p>
+
+    <script>
+        const apt = document.querySelector('.akapit')
+
+        apt.addEventListener('mouseover', function() {
+            apt.style.backgroundColor = 'red'
+        })
+
+        apt.addEventListener('mouseout', function(){
+            apt.style.backgroundColor = 'white'
+        })
+    </script>
+</body>
+</html>

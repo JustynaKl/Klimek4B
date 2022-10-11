@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.but1{
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 2rem;
+}
+
+.but2{
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 2rem;
+}
+    </style>
+</head>
+<body>
+    <button class="but1">Klik</button>
+    <button class="but2">Kliknij mnie </button>
+
+    <script>
+        const btn1 = document.querySelector(".but1")
+        const btn2 = document.querySelector(".but2")
+
+        btn1.addEventListener('click', function(){
+            btn1 = alert()
+        })
+
+        btn2.addEventListener('click', function () {
+            btn2 = alert()
+        })
+    </script>
+</body>
+</html>
