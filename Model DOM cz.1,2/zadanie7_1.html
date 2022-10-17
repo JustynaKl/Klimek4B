@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var data = new Date();
+var msc
+var dn
+switch(data.getDay()){  
+    case 0 : dn = "niedziela"; break;
+    case 1 : dn = "poniedziałek"; break;
+    case 2 : dn = "wtorek"; break;
+    case 3 : dn = "środa"; break;
+    case 4 : dn = "czwartek"; break;
+    case 5 : dn = "piątek"; break;
+    case 6 : dn = "sobota"; break;
+}
+switch(data.getMonth()){
+    case 0: msc = "styczeń"; break;
+    case 1: msc= "luty"; break;
+    case 2: msc = "marzec"; break;
+    case 3: msc= "kwiecień"; break;
+    case 4: msc = "maj"; break;
+    case 5: msc= "czerwiec"; break;
+    case 6: msc = "lipiec"; break;
+    case 7: msc= "sierpień"; break;
+    case 8: msc = "wrzesień"; break;
+    case 9: msc= "październik"; break;
+    case 10: msc = "listopad"; break;
+    case 11: msc= "grudzień"; break;
+}
+document.write( dn + ' ' + msc + " " + data.getFullYear());
+
+    </script>
+</body>
+</html>

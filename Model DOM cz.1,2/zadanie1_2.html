@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .sekcja{
+        color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    p{
+        background-color: lightgoldenrodyellow;
+    }
+    p+p{
+        background-color: lightsalmon;
+    }
+</style>
+<body>
+    <h1>Nagłówek</h1>
+    <div class="sekcja">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas laudantium cum, sequi in doloribus, at nisi ipsam commodi iusto eius exercitationem dolores similique tempore illo veniam optio harum ab maxime.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis fugiat reprehenderit vitae rerum blanditiis.</p>
+
+    <script>
+        const nag = document.querySelector('h1')
+        const DiV = document.querySelector('.sekcja')
+        const akapit = document.querySelectorAll('p')
+
+       akapit[0].textContent = "Bardzo lubię się uczyć"
+       nag.textContent = 'JavaScript'
+       DiV.style.fontFamily = 'Tahoma'
+       const akapitdrugsto = document.createElement('h2')
+       akapitdrugsto.textContent = "Aplikacje internetowe"
+       document.body.appendChild(akapitdrugsto)
+       nag.remove()
+    </script>
+</div>
+</body>
+</html>

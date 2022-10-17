@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var agent = navigator.userAgent.toLowerCase();
+
+var nazwa = "nieznany";
+
+if(agent.indexOf('windows') != -1){
+
+  nazwa = "Windows";
+
+}
+
+if(agent.indexOf('linux') != -1){
+
+  nazwa = "Linux";
+
+}
+
+else if(agent.indexOf('mac') != -1){
+
+  nazwa = "MacOS";
+
+}
+
+document.write("Twój system to: " + nazwa);
+    </script>
+</body>
+</html>
