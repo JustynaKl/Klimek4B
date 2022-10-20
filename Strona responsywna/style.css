@@ -1,0 +1,151 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(192, 168, 139);
+    padding: 10px 20px;
+    border-bottom: 2px solid black;
+}
+
+.logo{
+    height: 100%;
+    object-fit: cover;
+}
+
+.hamburger{
+    height: 50px;
+    padding: 0 20px;
+}
+
+/*@media(min-width: 900px) {
+    .hamburger{
+        display: none;
+    }
+}*/
+
+.menu-items{
+    display: none;
+
+}
+
+.header{
+    padding: 10px 20px;
+}
+
+.header img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.header h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header p{
+    padding: 10px 0;
+}
+
+.header button{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+}
+
+.banner{
+    height: 50px;
+    background-color: burlywood;
+}
+
+.info{
+    padding: 10px 15px;
+}
+
+.info-item h4{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.info-item button{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+
+.contact{
+    padding: 10px 15px;
+}
+
+.img{
+    display: none;
+}
+
+.form h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.form-item input, 
+.form-item textarea{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+@media(min-width: 900px) {
+    .menu-items{
+        display: flex;
+        list-style: none;
+    }
+    .menu-link{
+        text-decoration: none;
+        display: block;
+        padding: 20px 30px;
+        border: 1px solid black;
+        color: thistle;
+    }
+    .hamburger{
+        display: none;
+    }
+    .header{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .image{
+        order: 2;
+        flex-basis: 60%;
+    }
+    .header h2{
+        text-align: left;
+    }
+    .wrapper{
+        flex-basis: 45%;
+    }
+    .header button {
+        margin: 0 0;
+    }
+    .banner{
+        height: 100px;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+    }
+    .info-item{
+        flex-basis: 15px;
+    }
+    .info-item h4{
+        text-align: left;
+        padding: 10px 0;
+    }
+}
