@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.blok-lewy{
+    width: 30%;
+    height: 600px;
+    background-color: maroon;
+    color: white;
+}
+
+.blok-prawy{
+    width: 70%;
+    height: 600px;
+    background-color: maroon;
+    color: white;
+    overflow-y: auto;
+}
+
+.stopka{
+    width: 100%;
+    background-color: dimgray;
+    color: white;
+}
+
+.blok-prawy > div{
+    display: flex;
+}
+
+.blok-prawy > p{
+    padding: 10px;
+}
+
+.blok-prawy img{
+    padding: 10px;
+    border: 1px solid white
+}
+
+.blok-lewy button:nth-child(3){
+    background-color: indigo;
+}
+
+.blok-lewy button:nth-child(4){
+    background-color: steelblue;
+}
+
+.blok-lewy button:nth-child(5){
+    background-color: olive;
+}
+
