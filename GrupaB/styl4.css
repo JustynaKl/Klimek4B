@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFE4B5;
+}
+
+.gora{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gora div.baner
+{
+    background-color: #4B0082;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 75%;
+    font-size: 150%;
+}
+
+.logo{
+    width: 25%;
+    height: 100px;
+}
+
+.lewo{
+    width: 45%;
+    height: 300px;
+}
+
+.prawo{
+    height: 300px;
+    width: 55%;
+    text-align: center;
+}
+
+.blok-glowny{
+    padding: 40px;
+    background-color: #4B0082;
+}
+
+form{
+    margin: 40px;
+}
+
+footer{
+    background-color: #4B0082;
+    color: white;
+    padding: 40px;
+}
+
+table{
+    color: white;
+    text-align: center;
+    width: 90%;
+    border: 1px dotted yellow;
+}
+
+tr:hover{
+    color: yellow;
+    background-color: #9370DB;
+}
+
+.rowno{
+    display: flex;
+    flex-wrap: wrap;
+}
